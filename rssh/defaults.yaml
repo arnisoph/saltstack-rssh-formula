@@ -1,0 +1,15 @@
+{% load_yaml as rawmap_osfam %}
+Debian:
+  pkgs:
+    - rssh
+    - rsync
+  config:
+    main: {}
+RedHat:
+  pkgs:
+    - rssh
+    - rsync
+    - scponly
+  config:
+    main: {}
+{% endload %}

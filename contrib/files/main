@@ -1,0 +1,6 @@
+allowrsync
+allowscp
+allowsftp
+umask = 022
+chrootpath = /var/chroot
+logfacility = LOG_USER
