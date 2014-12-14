@@ -3,8 +3,6 @@
 {% from 'rssh/defaults.yaml' import rawmap_osfam with context %}
 {% set datamap = salt['grains.filter_by'](rawmap_osfam, merge=salt['pillar.get']('rssh:lookup')) %}
 
-{% set chroot_dirs %}
-
 include: {{ datamap.sls_include|default([]) }}
 extend: {{ datamap.sls_extend|default({}) }}
 
